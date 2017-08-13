@@ -43,7 +43,7 @@
 
 .btn-edit{
 	background-color: #3a9955;
-    color: white;
+    color: white !important;
     padding: 5px 15px;
     font-size: 15px;
     cursor: pointer;
