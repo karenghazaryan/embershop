@@ -1,90 +1,92 @@
 <div class="block text-center">
-<div class="content">
+    <div class="content">
 
-{{#if isEdit}}
+      {{#if isEdit}}
 
+          <div class="form-control">
+            {{input value=model.name
+            class="item-control"
+            key-up="validate"
+            name='name'
+            placeholder="Name"}}
+            {{#if hasErrorName}}
+                <span class='help-block has-error'>Name is required</span>
+            {{/if}}
+          </div>
 
-    <div class="form-control">
-{{input value=model.name
-class="item-control"
-action="validate" name='name' on="key-up"
-placeholder="Name"}}
-{{#if hasErrorName}}
-	    <span class='help-block has-error'>Name is required</span>
-	{{/if}}
-</div>
+          <div class="form-control">
+            {{input value=model.quantity
+            class="item-control"
+            key-up="validate"
+            name='quantity'
+            placeholder="Quantity"}}
+            {{#if hasErrorQuantity}}
+                <span class='help-block has-error'>Quantity is required or is incorrect</span>
+            {{/if}}
+          </div>
 
- <div class="form-control">
-{{input value=model.quantity
-class="item-control"
-action="validate" name='quantity' on="key-up"
-placeholder="Quantity"}}
-{{#if hasErrorQuantity}}
-	    <span class='help-block has-error'>Quantity is required or is incorrect</span>
-	{{/if}}
-	</div>
+          <div class="form-control">
+            {{input value=model.price
+            key-up="validate"
+            name='price'
+            class="item-control"
+            placeholder="price"}}
+            {{#if hasErrorPrice}}
+                <span class='help-block has-error'>Price is required or is incorrect</span>
+            {{/if}}
+          </div>
+          <div class="form-group text-center">
 
- <div class="form-control">
-{{input value=model.price
-action="validate" name='price' on="key-up"
-class="item-control"
-placeholder="price"}}
-{{#if hasErrorPrice}}
-	    <span class='help-block has-error'>Price is required or is incorrect</span>
-	{{/if}}
-</div>
-<div class="form-group text-center">
+              <input type="button" class="btn btn-block btn-primary"
+                     value="update" {{action "updateItem" model.name model.price model.quantity model.id model.shop.id}}/>
+          </div>
 
-<input type = "button" class="btn btn-block btn-primary"  value="update" {{action "updateItem" model.name model.price model.quantity model.id model.shop.id}}/>
-</div>
+      {{else}}
 
+          <div class="form-control">
+            {{input value=name
+            name='name'
+            key-up="validate"
 
-
-
-{{else}}
-
- <div class="form-control">
-{{input value=name
-name='name'
-action="validate" on="key-up"
-class="item-control"
-placeholder="Name"}}
-{{#if hasErrorName}}
-	    <span class='help-block has-error'>Name is required</span>
-	{{/if}}
-</div>
-
-
-
- <div class="form-control">{{input value=quantity
-name='quantity'
-action="validate" on="key-up"
-class="item-control"
-placeholder="Quantity"}}
-{{#if hasErrorQuantity}}
-	    <span class='help-block has-error'>Quantity is required or is incorrect</span>
-	{{/if}}
-</div>
+            class="item-control"
+            placeholder="Name"}}
+            {{#if hasErrorName}}
+                <span class='help-block has-error'>Name is required</span>
+            {{/if}}
+          </div>
 
 
- <div class="form-control">
-{{input value=price
-name='price'
-action="validate" on="key-up"
-class="item-control"
-placeholder="Price"}}
-{{#if hasErrorPrice}}
-	    <span class='help-block has-error'>Price is required or is incorrect</span>
-	{{/if}}
-</div>
-	 <div class="form-group text-center">
-
-<input type = "button" class="btn btn-block btn-primary" value="Add" {{action "createItem" name price quantity model.id}}/>
-</div>
+          <div class="form-control">{{input value=quantity
+          name='quantity'
+          key-up="validate"
+          class="item-control"
+          placeholder="Quantity"}}
+            {{#if hasErrorQuantity}}
+                <span class='help-block has-error'>Quantity is required or is incorrect</span>
+            {{/if}}
+          </div>
 
 
-{{/if}}
-</div>
+          <div class="form-control">
+            {{input value=price
+            name='price'
+            key-up="validate"
+            action="validate" on="key-up"
+            class="item-control"
+            placeholder="Price"}}
+            {{#if hasErrorPrice}}
+                <span class='help-block has-error'>Price is required or is incorrect</span>
+            {{/if}}
+          </div>
+          <div class="form-group text-center">
+
+              <input type="button" class="btn btn-block btn-primary"
+                     value="Add" {{action "createItem" name price quantity model.id}}/>
+          </div>
+
+      {{/if}}
+
+    </div>
 
 </div>
 

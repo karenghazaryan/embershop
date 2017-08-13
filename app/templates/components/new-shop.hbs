@@ -1,33 +1,34 @@
 <div class='block text-center'>
-<div class="content">
-{{#if model}}
- <div class="form-control">
-	{{input value=model.name
-	class="item-control"
-	action="validate" on="key-up"
-	placeholder="Name"}}
-	{{#if isError}}
-	    <span class='help-block has-error'>Name is required</span>
-	{{/if}}
-	</div>
-	 <div class="form-group text-center">
-	<input type = "button" value="Update" class="btn btn-block btn-primary" {{action "updateShop" model.name  model.id}}/>
-	</div>
-{{else}}
-	<div class="form-control">
+    <div class="content">
+      {{#if model}}
+          <div class="form-control">
+            {{input value=model.name
+            class="item-control"
+            action="validate" on="key-up"
+            placeholder="Name"}}
+            {{#if isError}}
+                <span class='help-block has-error'>Name is required</span>
+            {{/if}}
+          </div>
+          <div class="form-group text-center">
+              <input type="button" value="Update"
+                     class="btn btn-block btn-primary" {{action "updateShop" model.name  model.id}}/>
+          </div>
+      {{else}}
+          <div class="form-control">
 
-	{{input value=value
-	class="item-control"
-	action="validate" on="key-up"
-	placeholder="Name"}}
-	{{#if isError}}
-	    <span class='help-block has-error'>Name is required</span>
-	{{/if}}
-	</div>
-	 <div class="form-group text-center">
-	<input type = "button" value="Add" class="btn btn-block btn-primary" {{action "createShop" value}}/>
-	</div>
-	
-{{/if}}
-</div>
+            {{input value=value
+            class="item-control"
+            action="validate" on="key-up"
+            placeholder="Name"}}
+            {{#if isError}}
+                <span class='help-block has-error'>Name is required</span>
+            {{/if}}
+          </div>
+          <div class="form-group text-center">
+              <input type="button" value="Add" class="btn btn-block btn-primary" {{action "createShop" value}}/>
+          </div>
+
+      {{/if}}
+    </div>
 </div>

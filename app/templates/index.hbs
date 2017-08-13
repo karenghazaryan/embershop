@@ -1,4 +1,3 @@
-
 <h1>Shops</h1>
 
 <table class="shope-list block" style="margin-bottom: 50px">
@@ -6,19 +5,19 @@
       <tr>
           <td>{{#link-to "shop.show" shop}}{{shop.name}}{{/link-to}}</td>
           <td>
-          <div class="actions">
-              <button {{action "deleteShop" shop.id }} class="btn-delete">Delete</button>
-              {{#link-to 'shop.edit'  shop class="btn-edit"}}
-			      Update
-			  {{/link-to}}    
-			  </div>      
+              <div class="actions">
+                  <button {{action "deleteShop" shop.id }} class="btn-delete">Delete</button>
+                {{#link-to 'shop.edit'  shop class="btn-edit"}}
+                    Update
+                {{/link-to}}
+              </div>
           </td>
       </tr>
   {{/each}}
-  </table>
+</table>
 
- {{#link-to 'shop.new' class="button btn-create"}}
-      Create Shop
-  {{/link-to}}
+{{#link-to 'shop.new' class="button btn-create"}}
+    Create Shop
+{{/link-to}}
 
 {{outlet}}

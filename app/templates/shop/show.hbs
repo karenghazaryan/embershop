@@ -1,11 +1,11 @@
 <div class="shop-items">
 
-<h1 class="header text-center"> {{model.name}} /<i>item list</i></h1>
-{{list-items model=model.shop onDelete=(action "deleteItem") }}
-<div class="form-group">
- {{#link-to 'shop.new-item' model.id class="btn btn-primary btn-block text-center"}}
-      Create item
-  {{/link-to}}
-  </div>
-{{outlet}}
+    <h1 class="header text-center"> {{model.name}} /<i>item list</i></h1>
+  {{list-items model=model sum=model.sumPrice onDelete=(action "deleteItem") }}
+    <div class="form-group">
+      {{#link-to 'shop.new-item' model.id class="btn btn-primary btn-block text-center"}}
+          Create item
+      {{/link-to}}
+    </div>
+  {{outlet}}
 </div>

@@ -3,6 +3,7 @@ import Ember from 'ember';
 export default Ember.Component.extend({
    classNames: ['create-shop'],
    actions:{
+   	
 	   	createItem(name, price, quantity, shopId){	
             if(!name || this.get('hasErrorName')){
             	this.set('hasErrorName',true)
