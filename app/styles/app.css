@@ -1,0 +1,283 @@
+
+.btn-create{
+	background-color: #222;
+    border-radius: 0;
+    font-size: 16px;
+    padding-left: 60px;
+    padding-right: 60px;
+    /* padding: 0px 60px; */
+    margin-left: 17.5%;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+        vertical-align: top;
+}
+
+.block{
+    width: 65%;
+    border: 1px dashed #a7a7a7;
+    border-radius: 5px;
+    margin: 45px auto;
+    padding: 15px 20px;
+}
+
+.shope-list tr{
+	border-bottom: 1px solid #ccc;
+    display: inline-block;
+    /* clear: both; */
+    width: 100%;
+    padding-bottom: 5px;
+    /* color: black; */
+}
+
+.btn-delete{
+	background: transparent;
+    border: none;
+    background-color: #bf3d3d;
+    color: white;
+    padding: 6px 15px 5px;
+    font-size: 15px;
+    box-sizing: initial;
+    cursor: pointer;
+}
+
+.btn-edit{
+	background-color: #3a9955;
+    color: white;
+    padding: 5px 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.shope-list tr a{
+	color:#777
+}
+
+.shope-list tr td{
+	 width: 49%;
+    display: inline-table;
+}
+
+.shope-list div.actions{
+	text-align: right;
+}
+
+h1{
+	text-align: center;
+    margin-top: 20px;
+}
+
+
+input.text{
+	font-size: 20px;
+    padding: 8px 10px;
+    width: 64%;
+}
+
+.no-margin{
+	margin: 0;
+}
+
+.text-center{
+	text-align: center;
+}
+
+div.block .sm-width{
+	    width: 24%;
+}
+
+.item-list tr td{
+	width: 24%;
+    display: inline-table;
+}
+
+
+
+
+
+
+div.shop-items {   
+    width: 768px;
+    margin: 0 auto;
+}
+
+div.form-control {
+    width: 70%;
+    display: block;
+    margin:0 auto;
+}
+
+input.item-control{
+    padding: 5px 15px;
+    font-size: 18px;
+}
+
+.help-block{
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.has-error{
+    color: #a94442;
+}
+
+.has-success{
+    color: #3c763d;
+}
+
+div.form-control input.item-control {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+div.create-shop {
+    width: 768px;
+    margin: 0 auto;
+
+}
+
+div.content {
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.form-control {
+    width: 100%;
+    font-size: 18px;
+    padding: 5px 15px;
+}
+
+.table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: separate;
+}
+
+.table td {
+    padding: 15px;
+}
+
+.table thead td {
+    text-align: center;
+}
+
+.table tbody td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.table tbody td:not(:first-child) {
+    text-align: center;
+}
+
+.table thead {
+    text-transform: uppercase;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.table-bordered td {
+    border: 1px dashed #b8b8b8;
+}
+
+.table-bordered thead td {
+    /*border-bottom: 1px solid #b8b8b8;*/
+}
+
+.table-bordered tbody > tr:last-child td {
+    /*border-top: none;*/
+    border-bottom: none;
+}
+
+.table-bordered thead td:first-child {
+    border-top-left-radius: 15px;
+}
+
+.table-bordered thead td:nth-child(3) {
+    border-top-right-radius: 15px;
+}
+
+.table-bordered tfoot td:first-child {
+    border-bottom-left-radius: 15px;
+}
+
+.table-bordered tfoot td:nth-child(3) {
+    border-bottom-right-radius: 15px;
+}
+
+.table-bordered tfoot td {
+    border-top: 1px solid #b8b8b8;
+}
+
+.table-bordered td:last-child {
+    border: none;   
+}
+
+.table td {
+    background-color: #f5f5f5;
+}
+
+.table > tfoot p:last-child {
+    margin-bottom: 30px;
+}
+
+td.total-price > p {
+    margin: 0;
+}
+
+.btn {
+    color: white;
+    border: none;
+    border-radius: 0;
+    display: inline-block;
+    background: transparent;
+    font-size: 18px;
+    padding: 2px 5px;
+    cursor: pointer;
+}
+
+.btn-success {
+    background-color: #51c874;
+}
+
+.btn-success:hover {
+    background-color: #3a9855;
+}
+
+.btn-danger {
+    background-color: #e54d4d;
+}
+
+.btn-danger:hover {
+    background-color: #be3939;
+}
+
+.btn-primary {
+    background-color: #222222;
+}
+
+.header {
+    font-weight: 300;
+}
+
+div.form-group {
+    margin-top: 25px;
+}
+
+.btn-block {
+    width: 200px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}

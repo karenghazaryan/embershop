@@ -1,0 +1,47 @@
+
+<table  class="table table-bordered" >
+     <thead>
+        <tr>
+            <td>name</td>
+            <td>qty</td>
+            <td>price</td>
+            <td class="actions"></td>
+        </tr>
+        </thead>
+         <tbody>
+{{#each model.items as |item|}}
+      <tr  class="text-left">
+          <td>{{item.name}}</td>
+          <td>{{item.quantity}}</td>
+          <td>{{item.price}}</td>
+          <td class="actions">
+            <div class="actions">
+              {{#link-to 'shop.edit-item' item class="btn btn-success btn-edit"}}
+
+    			       <i class="fa fa-pencil fa-1"></i>
+    			    {{/link-to}}
+                <a  {{action "deleteItem"  item.id }} class="btn btn-danger btn-delete">
+                        <i class="fa fa-trash-o fa-1"></i>
+                    </a>
+                 </div>
+          </td>
+         
+      </tr>
+  {{/each}}
+   </tbody>
+
+   <tfoot>
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="total-price">
+                <p class="text-right">Total Price</p>
+                <p class="text-right">
+                    <span>$</span>
+                    <span>{{model.sum}}</span>
+                </p>
+            </td>
+            <td class="actions"></td>
+        </tr>
+        </tfoot>
+  </table>
